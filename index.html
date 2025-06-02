@@ -1,0 +1,115 @@
+<!--
+NOMBRE DE LOS ALUMNOS:
+DULCE CECILIA HERNANDES DE LA CRUZ.
+ERICK GABRIEL LOPEZ MELO.
+LEONARDO LEDESMA MERCADO.
+NOMBRE DEL DOCENTE:
+ELI HUSIM RUIZ CRUZ.
+GRUPO:
+605
+MATERIA:
+ANALISIS DEL LENGUAJE NATURAL.
+CARRERA:
+CIENCIA DE DATOS E INTELIGENCIA ARTIFICIAL.
+SEMESTRE:
+6.TO
+FECHA:
+19/05/2025
+ACTIVIDAD:
+EL CODIGO DE LA CREACION DE LA PAGINA WEB EN HTML PARA LA DESCARGA DEL ARCHIVO DE EXCEL GENERADO CON BASE A LA PREDICCION.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descargar Predicciones 2034</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f0f2f5;
+    }
+
+    .container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background: #4a90e2;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: background 0.3s, transform 0.1s;
+      cursor: pointer;
+    }
+
+    .download-btn:hover {
+      background: #357ab8;
+      transform: translateY(-2px);
+    }
+
+    .download-btn:active {
+      transform: translateY(0);
+    }
+
+    .footer {
+      margin-top: 1.5rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Predicciones de Abandono 2034</h1>
+    <!-- Asegúrate de que el archivo esté en la misma carpeta o una subcarpeta -->
+    <a 
+      href="Predicciones_Abandono_2034.xlsx" 
+      download="Predicciones_abandono_2034.xlsx"
+      class="download-btn"
+      id="btnDownload"
+    >
+      📥 Descargar Excel
+    </a>
+    <div class="footer">
+      © 2025 CONALEP. EL CUAL ES EL PROPIETARIO DE LA PAGINA LOS CUALES SON 3 ESTUDIANTES DEL CONALEP DE LA CARRERA DE CIENCIA DE DATOS E INTELIGENCIA ARTIFICIAL: ERICK GABRIEL LOPEZ MELO, DULCE CECILIA HERNANDEZ DE LA CRUZ, LEONARDO LEDESMA MERCADO DEL CICLO ESCOLAR: 2022 - 2025
+    </div>
+  </div>
+
+  <script>
+    const btn = document.getElementById('btnDownload');
+    btn.addEventListener('click', () => {
+      btn.textContent = '✅ Descarga Iniciada';
+      setTimeout(() => {
+        btn.textContent = '📥 Descargar Excel';
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
